@@ -19,6 +19,5 @@ neocities push _site
 You can say hi at ~mail at cyrialize dot dev~.
 
 You can find me on:
-- [Github](https://github.com/cyrialize)
-- [Bluesky](https://bsky.app/profile/cyrialize.dev)
-- [Hacker News](https://news.ycombinator.com/user?id=cyrialize)
+- [[https://bsky.app/profile/cyrialize.dev][Bluesky]]
+- [[https://news.ycombinator.com/user?id=cyrialize][Hacker News]]
