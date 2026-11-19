@@ -2,12 +2,23 @@
 
 https://cyrialize.dev/
 
-Hosted on [[https://neocities.org/][Neocities]]. I use the [[https://github.com/neocities/neocities-ruby][Neocities gem]].
+My website is hosted on [[https://neocities.org/][Neocities]] and built with [[https://jekyllrb.com/][Jekyll]].
 
-This website is built with [[https://jekyllrb.com/][Jekyll]].
+I use [[https://github.com/ai-robots-txt/ai.robots.txt][this]] repository for my ~robots.txt~.
 
-I use [[https://github.com/ai-robots-txt/ai.robots.txt][this]] repository for my ~robots.txt~
+I use the [[https://github.com/neocities/neocities-ruby][Neocities gem]] to help deploy, which is just:
+#+BEGIN_SRC sh
+# Build to _site
+jekyll build
 
-* Deployment
-- ~jekyll build~ to build ~_site~
-- ~neocities push _site~ to recursively upload modified files in ~_site~
+# Recursively push uploaded files to Neocities
+neocities push _site
+#+END_SRC
+
+* Find Me
+You can say hi at ~mail at cyrialize dot dev~.
+
+You can find me on:
+- [Github](https://github.com/cyrialize)
+- [Bluesky](https://bsky.app/profile/cyrialize.dev)
+- [Hacker News](https://news.ycombinator.com/user?id=cyrialize)
