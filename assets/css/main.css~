@@ -1,0 +1,356 @@
+#main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 50rem) {
+  #main-container {
+    width: 100%;
+  }
+}
+
+#main-hr {
+  margin-top: 0rem;
+  display: none;
+}
+
+#content {
+  width: 100%;
+  margin-top: 1rem;
+  outline: 1px solid black;
+}
+
+#inner-content {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+body {
+  font-family: verdana, Monaco, sans-serif
+}
+
+/* THEME START: none */
+body hr {
+  border-top: 1px solid black;
+  border-radius: 1px;
+}
+
+body a {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+body a:visited {
+  color: #800080;
+}
+/* THEME END: none */
+
+pre code {
+  padding: 10px;
+  display: block;
+}
+
+code {
+  background: #272822;
+  color: white;
+  padding: 0.1rem;
+  border-radius: 0.1rem;
+  font-size: 13px;
+  border: 1px solid white;
+  font-family: "JetBrains Mono"
+}
+
+/* Styling for the sample under each theme code snippet */
+.theme-sample {
+  height: 50px;
+  width: 100%;
+  border: 1px solid white;
+  padding: 0.1rem;
+}
+
+.theme-sample-link {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Theme specific rules, these match the values in the select */
+
+/* THEME START: night */
+body.night {
+  background-color: #202b38;
+  color: #dbdbdb;
+}
+
+body.night hr {
+  border-top: 1px solid #dbdbdb;
+}
+
+body.night a {
+  color: #70C1FF;
+}
+
+body.night a:visited {
+  color: #D9A3FF;
+}
+
+body.night #content {
+  outline: 1px solid white;
+}
+/* THEME END: night */
+
+/* THEME START: day */
+/* https://www.colorhexa.com/f5deb3 */
+body.day {
+  /* This is wheat */
+  background-color: #f5deb3;
+  color: #50380B;
+}
+
+body.day hr {
+  border-top: 1px solid #2D2006;
+}
+
+body.day a {
+  color: #294765;
+}
+
+body.day a:visited {
+  color: #6A0DAD;
+}
+
+body.day #content {
+  outline: 1px solid #50380B;
+}
+/* THEME END: day */
+
+/* THEME START: carrot_cake */
+/* https://www.colorhexa.com/e08d59 */
+/* https://encycolorpedia.com/e08d59 */
+/* Color is known as Porter Paints Carrot Cake */
+body.carrot_cake {
+  background-color: #e08d59;
+  color: #1C120D;
+}
+
+body.carrot_cake hr {
+  border-top: 1px solid #290A0B;
+}
+
+body.carrot_cake a {
+  color: #06084C;
+}
+
+body.carrot_cake a:visited {
+  color: #29052E;
+}
+
+body.carrot_cake #content {
+  outline: 1px solid #1C120D;
+}
+/* THEME END: carrot_cake */
+
+/* THEME START: windows_98 */
+body.windows_98 {
+  background-color: #c0c0c0;
+}
+
+body.windows_98 #main-hr {
+  display: block;
+  border-top: none;
+  background: linear-gradient(90deg, navy, #1084d0);
+  height: 15px;
+  padding: 3px 2px 3px 3px;
+  margin: 3px 3px 0 3px;
+}
+
+body.windows_98 #content {
+  box-shadow:
+    inset -1px -1px #0a0a0a,
+    inset 1px 1px #dfdfdf,
+    inset -2px -2px grey,
+    inset 2px 2px #fff;
+}
+/* THEME END: windows_98 */
+
+/* THEME START: windows_xp */
+body.windows_xp {
+  background-color: #ece9d8;
+}
+
+body.windows_xp #main-hr {
+  display: block;
+  background: linear-gradient(
+    180deg,
+    #0997ff,
+    #0053ee 8%,
+    #0050ee 40%,
+    #06f 88%,
+    #06f 93%,
+    #005bff 95%,
+    #003dd7 96%,
+    #003dd7
+  );
+  padding: 3px 5px 3px 3px;
+  border-top: 1px solid #0831d9;
+  border-left: 1px solid #0831d9;
+  border-right: 1px solid #001ea0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 7px;
+  height: 21px;
+}
+
+body.windows_xp #content {
+  box-shadow:
+    inset -1px -1px #00138c,
+    inset 1px 1px #0831d9,
+    inset -2px -2px #001ea0,
+    inset 2px 2px #166aee,
+    inset -3px -3px #003bda,
+    inset 3px 3px #0855dd;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+/* THEME END: windows_xp */
+
+.highlight pre { background-color: #272822; }
+.highlight .hll { background-color: #272822; }
+.highlight .c { color: #75715e } /* Comment */
+.highlight .err { color: #960050; background-color: #1e0010 } /* Error */
+.highlight .k { color: #66d9ef } /* Keyword */
+.highlight .l { color: #ae81ff } /* Literal */
+.highlight .n { color: #f8f8f2 } /* Name */
+.highlight .o { color: #f92672 } /* Operator */
+.highlight .p { color: #f8f8f2 } /* Punctuation */
+.highlight .cm { color: #75715e } /* Comment.Multiline */
+.highlight .cp { color: #75715e } /* Comment.Preproc */
+.highlight .c1 { color: #75715e } /* Comment.Single */
+.highlight .cs { color: #75715e } /* Comment.Special */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .kc { color: #66d9ef } /* Keyword.Constant */
+.highlight .kd { color: #66d9ef } /* Keyword.Declaration */
+.highlight .kn { color: #f92672 } /* Keyword.Namespace */
+.highlight .kp { color: #66d9ef } /* Keyword.Pseudo */
+.highlight .kr { color: #66d9ef } /* Keyword.Reserved */
+.highlight .kt { color: #66d9ef } /* Keyword.Type */
+.highlight .ld { color: #e6db74 } /* Literal.Date */
+.highlight .m { color: #ae81ff } /* Literal.Number */
+.highlight .s { color: #e6db74 } /* Literal.String */
+.highlight .na { color: #a6e22e } /* Name.Attribute */
+.highlight .nb { color: #f8f8f2 } /* Name.Builtin */
+.highlight .nc { color: #a6e22e } /* Name.Class */
+.highlight .no { color: #66d9ef } /* Name.Constant */
+.highlight .nd { color: #a6e22e } /* Name.Decorator */
+.highlight .ni { color: #f8f8f2 } /* Name.Entity */
+.highlight .ne { color: #a6e22e } /* Name.Exception */
+.highlight .nf { color: #a6e22e } /* Name.Function */
+.highlight .nl { color: #f8f8f2 } /* Name.Label */
+.highlight .nn { color: #f8f8f2 } /* Name.Namespace */
+.highlight .nx { color: #a6e22e } /* Name.Other */
+.highlight .py { color: #f8f8f2 } /* Name.Property */
+.highlight .nt { color: #f92672 } /* Name.Tag */
+.highlight .nv { color: #f8f8f2 } /* Name.Variable */
+.highlight .ow { color: #f92672 } /* Operator.Word */
+.highlight .w { color: #f8f8f2 } /* Text.Whitespace */
+.highlight .mf { color: #ae81ff } /* Literal.Number.Float */
+.highlight .mh { color: #ae81ff } /* Literal.Number.Hex */
+.highlight .mi { color: #ae81ff } /* Literal.Number.Integer */
+.highlight .mo { color: #ae81ff } /* Literal.Number.Oct */
+.highlight .sb { color: #e6db74 } /* Literal.String.Backtick */
+.highlight .sc { color: #e6db74 } /* Literal.String.Char */
+.highlight .sd { color: #e6db74 } /* Literal.String.Doc */
+.highlight .s2 { color: #e6db74 } /* Literal.String.Double */
+.highlight .se { color: #ae81ff } /* Literal.String.Escape */
+.highlight .sh { color: #e6db74 } /* Literal.String.Heredoc */
+.highlight .si { color: #e6db74 } /* Literal.String.Interpol */
+.highlight .sx { color: #e6db74 } /* Literal.String.Other */
+.highlight .sr { color: #e6db74 } /* Literal.String.Regex */
+.highlight .s1 { color: #e6db74 } /* Literal.String.Single */
+.highlight .ss { color: #e6db74 } /* Literal.String.Symbol */
+.highlight .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #f8f8f2 } /* Name.Variable.Class */
+.highlight .vg { color: #f8f8f2 } /* Name.Variable.Global */
+.highlight .vi { color: #f8f8f2 } /* Name.Variable.Instance */
+.highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+
+.highlight .gh { } /* Generic Heading & Diff Header */
+.highlight .gu { color: #75715e; } /* Generic.Subheading & Diff Unified/Comment? */
+.highlight .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
+.highlight .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
+
+/* Jetbrains Mono */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold-Italic.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold-Italic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Italic.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium-Italic.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium-Italic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

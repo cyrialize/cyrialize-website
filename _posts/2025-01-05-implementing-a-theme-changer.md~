@@ -1,0 +1,17 @@
+---
+layout: default
+date: 2025-01-05
+title: Implementing a theme changer
+---
+
+# Implementing a theme changer
+
+If you haven't noticed in the `<nav>` container above, I have a `<select>` element that changes the overall style of my website.
+
+This is easy to implement - it's basically:
+- `<select>` element with `onchange` to a Javascript function
+- Javascript function changes the CSS class associated with the `<body>` tag
+- Other Javascript code saves the choice to `localStorage`
+- On page load, pull the saved choice (if it exists), and then load that theme
+
+To learn more, see the source code of this website.

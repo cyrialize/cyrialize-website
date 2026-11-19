@@ -1,0 +1,15 @@
+---
+layout: default
+title: Projects
+---
+<p>
+  Projects I'm currently working on or have worked on in the past few years.
+</p>
+
+{% for item in site.data.projects %} {% if item.current %}
+<p>
+  <a href="{{ item.link }}">{{ item.name }}</a>
+  <br />
+  {{ item.desc }}
+</p>
+{% endif %} {% endfor %}

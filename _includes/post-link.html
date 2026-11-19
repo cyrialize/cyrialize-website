@@ -1,0 +1,23 @@
+{% assign date_string = "%B %-d" %}
+{% if include.show_year %}
+  {% assign date_string = "%B %-d, %Y" %}
+{% endif %}
+
+{% assign show_tags = true %}
+{% if include.show_tags == false %}
+  {% assign show_tags = false %}
+{% endif %}
+
+<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+<small>{{ post.date | date: date_string }}</small>
+<br />
+{% if show_tags %}
+  {% for tag in post.tags %}
+  {% assign tag_slug = tag | slugify %}
+  <small>
+    <a href="{{ '/tags/' | relative_url }}#{{ tag_slug }}">
+      #{{ tag }}
+    </a>
+  </small>
+  {% endfor %}
+{% endif %}

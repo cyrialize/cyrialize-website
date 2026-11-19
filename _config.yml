@@ -1,0 +1,17 @@
+title: Cyrialize
+description: "Emacs and bad jokes"
+url: "https://cyrialize.dev"
+baseurl: ""
+permalink: /posts/:year/:month/:day/:slug/
+timezone: "America/New_York"
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - package-lock.json
+  - package.json
+  - readme.org
+  - .DS_Store
+  # Exclude lock and backup files Emacs generates
+  - "**/.#*"
+  - "**/*~"

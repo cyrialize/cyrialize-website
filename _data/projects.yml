@@ -1,0 +1,10 @@
+- name: dotfiles
+  link: https://github.com/cyrialize/dotfiles
+  desc: Dotfiles for my personal setup!
+  frontpage: true
+  current: true
+- name: .emacs.d
+  link: https://github.com/cyrialize/.emacs.d
+  desc: My Emacs configuration files!
+  frontpage: true
+  current: true

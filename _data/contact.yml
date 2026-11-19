@@ -1,0 +1,12 @@
+- name: Github
+  link: https://github.com/cyrialize
+  path: square-github-brands-solid.svg
+  alt: github square icon
+- name: Bluesky
+  link: https://bsky.app/profile/cyrialize.dev
+  path: square-bluesky-brands-solid.svg
+  alt: bluesky square icon
+- name: Hacker News
+  link: https://news.ycombinator.com/user?id=cyrialize
+  path: square-hacker-news-brands-solid.svg
+  alt: hacker news square icon

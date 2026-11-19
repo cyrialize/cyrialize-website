@@ -1,0 +1,13 @@
+* Cyrialize
+
+https://cyrialize.dev/
+
+Hosted on [[https://neocities.org/][Neocities]]. I use the [[https://github.com/neocities/neocities-ruby][Neocities gem]].
+
+This website is built with [[https://jekyllrb.com/][Jekyll]].
+
+I use [[https://github.com/ai-robots-txt/ai.robots.txt][this]] repository for my ~robots.txt~
+
+* Deployment
+- ~jekyll build~ to build ~_site~
+- ~neocities push _site~ to recursively upload modified files in ~_site~

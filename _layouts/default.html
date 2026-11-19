@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="{{ 'assets/css/main.css' | relative_url }}"
+      type="text/css"
+    />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ 'assets/img/favicon/favicon.ico' | relative_url }}"
+    />
+    <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
+
+    {% if page.title %}
+    <title>{{ page.title }} | {{ site.title }}</title>
+    {% else %}
+    <title>{{ site.title }}</title>
+    {% endif %}
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="content">
+	<hr id="main-hr">
+	<div id="inner-content">
+          <h1>{{ site.title }}</h1>
+          <nav>
+            <a href="/">Home</a>
+	    <a href="/about/">About</a>
+            <a href="/projects">Projects</a>
+	    <a href="/posts">Posts</a>
+          </nav>
+          <hr />
+          <nav>
+            <a href="/themes">Themes</a>
+            <select name="themes" id="themes" onchange="selectTheme(event)">
+              <option value="none">None</option>
+	      <option value="high-contrast">High Contrast</option>
+              <option value="night">Night</option>
+              <option value="day">Day</option>
+              <option value="carrot_cake">Carrot Cake</option>
+	      <hr>
+	      <option value="windows_98">Windows 98</option>
+	      <option value="windows_xp">Windows XP</option>
+            </select>
+          </nav>
+          <hr />
+          {{ content }}
+	</div>
+      </div>
+    </div>
+  </body>
+</html>
