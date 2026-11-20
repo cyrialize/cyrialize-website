@@ -15,3 +15,4 @@ You can find me on:
 - [Github](https://github.com/cyrialize)
 - [Bluesky](https://bsky.app/profile/cyrialize.dev)
 - [Hacker News](https://news.ycombinator.com/user?id=cyrialize)
+- [Emacs Wiki](https://www.emacswiki.org/emacs/Cyrialize)

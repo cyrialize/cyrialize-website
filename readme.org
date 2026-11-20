@@ -21,3 +21,4 @@ You can say hi at ~mail at cyrialize dot dev~.
 You can find me on:
 - [[https://bsky.app/profile/cyrialize.dev][Bluesky]]
 - [[https://news.ycombinator.com/user?id=cyrialize][Hacker News]]
+- [[https://www.emacswiki.org/emacs/Cyrialize][Emacs Wiki]]
