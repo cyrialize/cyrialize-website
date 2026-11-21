@@ -1,7 +1,0 @@
----
-layout: default
----
-
-# Implementing a theme changer
-
-If you haven't noticed in the `<nav>` container above, I have a `<select>` element
