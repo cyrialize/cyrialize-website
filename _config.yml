@@ -15,3 +15,8 @@ exclude:
   # Exclude lock and backup files Emacs generates
   - "**/.#*"
   - "**/*~"
+plugins:
+  - jekyll-feed
+feed:
+  icon: assets/img/favicon/favicon.ico
+  logo: assets/img/favicon/favicon.ico
